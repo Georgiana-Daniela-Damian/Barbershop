@@ -1,35 +1,89 @@
 :root {
   --brand-color: #ff6c00;
+  --black-color: #303030;
+  --white-color: #ffffff;
+
+  --text-font-family: "Open Sans", sans-serif;
+  --header-font-family: "Raleway", sans-serif;
 }
+/* Global styles */
+body {
+  font-family: var(--text-font-family);
+}
+
+a {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Classes */
 
 .social-media-link {
-  color: #303030;
+  color: var(--black-color);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
 }
 
-.social-media-link:hover {
+.social-media-link:hover,
+.social-media:focus {
   color: var(--brand-color);
 }
 
 .hero-content {
   /* TODO: replace with image background */
-  background-color: #303030;
-  color: #ffffff;
-}
-
-.nav-about {
-  color: var(--brand-color);
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 
 .nav-link {
-  color: #ffffff;
+  color: var(--white-color);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--brand-color);
 }
 
 .address-phone-number {
-  color: #ffffff;
+  color: var(--white-color);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.address-phone-number,
+.address-phone-number:focus {
+  color: var(--brand-color);
 }
 
 .book-service-button {
   background-color: rgba(0, 0, 0, 0);
-  color: #ffffff;
+  color: var(--white-color);
   border-color: var(brand-color);
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.book-service-button,
+.book-service-button:focus {
+  color: var(--brand-color);
 }
