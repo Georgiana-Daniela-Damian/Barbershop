@@ -266,3 +266,21 @@ ul {
   line-height: 185.714%;
   letter-spacing: 0.28px;
 }
+
+.why-us-cards {
+  --card-width: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  max-width: calc(var(--card-width) * 2 + 30px);
+}
+
+.why-us-card {
+  flex-basis: var(--card-width);
+  height: 133px;
+  background-color: #f7f7f7;
+}
+
+.why-us-card-shifted {
+  margin-top: 30px;
+}
